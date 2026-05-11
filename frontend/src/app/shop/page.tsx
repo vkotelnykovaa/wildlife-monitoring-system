@@ -2,42 +2,37 @@
 
 import PageTransition from "@/components/PageTransition/PageTransition";
 import Card from "@/components/ui/Card";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 
 type Product = {
   id: number;
   name: string;
-  price: number;
+  price: string;
   description: string;
+  image: string | null;
 };
 
 type CartItem = Product & {
   quantity: number;
 };
 
-const products: Product[] = [
-  {
-    id: 1,
-    name: "Футболка з картою переміщень",
-    price: 650,
-    description: "Сувенірна футболка з візуалізацією маршруту тварини.",
-  },
-  {
-    id: 2,
-    name: "Еко-шопер",
-    price: 350,
-    description: "Багаторазова сумка з тематичним дизайном.",
-  },
-  {
-    id: 3,
-    name: "Наліпки Wildlife Monitoring",
-    price: 120,
-    description: "Набір наліпок із тваринами Причорноморського степу.",
-  },
-];
-
 export default function ShopPage() {
+  const [products, setProducts] = useState<Product[]>([]);
   const [notification, setNotification] = useState("");
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await fetch(
+        "https://wildlife-backend-52nu.onrender.com/api/shop/products/"
+      );
+
+      const data: Product[] = await response.json();
+      setProducts(data);
+    };
+
+    fetchProducts();
+  }, []);
 
   const handleAddToCart = (product: Product) => {
     const existingCart = localStorage.getItem("cart");
@@ -93,8 +88,17 @@ export default function ShopPage() {
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {products.map((product) => (
               <Card key={product.id} className="hover:-translate-y-1">
-                <div className="mb-5 flex h-40 items-center justify-center rounded-lg bg-gradient-to-br from-emerald-50 to-slate-100 text-5xl">
-                  🌿
+                <div className="relative mb-5 flex h-40 items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-emerald-50 to-slate-100">
+                  {product.image ? (
+                   <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover"
+                    />
+                  ) : (
+                    <span className="text-5xl">🌿</span>
+                  )}
                 </div>
 
                 <h2 className="text-xl font-semibold text-slate-950">
@@ -107,7 +111,7 @@ export default function ShopPage() {
 
                 <div className="mt-6 flex items-center justify-between border-t border-slate-100 pt-5">
                   <p className="text-xl font-semibold text-slate-950">
-                    {product.price} грн
+                    {Number(product.price)} грн
                   </p>
 
                   <button
