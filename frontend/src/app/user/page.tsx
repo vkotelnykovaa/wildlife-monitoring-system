@@ -91,117 +91,77 @@ export default function UserPage() {
     router.push("/");
   };
 
+  {animals.map((animal, index) => {
+  const isSelected = selectedAnimal?.id === animal.id;
+  const isEndOfRowDesktop = (index + 1) % 3 === 0;
+  const isEndOfRowTablet = (index + 1) % 2 === 0;
+  const isLastAnimal = index === animals.length - 1;
+
+  const shouldShowMapAfterThisAnimal =
+    isSelected ||
+    (selectedAnimal &&
+      animals.findIndex((item) => item.id === selectedAnimal.id) <= index &&
+      (isEndOfRowDesktop || isLastAnimal));
+
   return (
-    <PageTransition>
-      <main className="page">
-        <section className="page-header">
-          <div className="page-header-inner py-10">
-            <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
-              <div>
-                <div className="page-badge">User dashboard</div>
+    <>
+      <div
+        key={animal.id}
+        className="card card-hover flex h-full flex-col p-4"
+      >
+        <div className="flex items-start justify-between gap-4">
+          <div>
+            <h3 className="font-semibold text-slate-950">{animal.name}</h3>
 
-                <h1 className="page-title">Кабінет користувача</h1>
+            <p className="card-text mt-1">{animal.species}</p>
 
-                <p className="page-subtitle">
-                  Перегляд тварин та їх переміщень за попередній місяць.
-                  Повні GPS-дані обмежені з міркувань безпеки тварин.
-                </p>
-              </div>
-
-              <button onClick={handleLogout} className="btn-secondary">
-                Вийти
-              </button>
-            </div>
-          </div>
-        </section>
-
-        <section className="mx-auto max-w-7xl px-6 py-10">
-          <div className="sidebar-card">
-            <h2 className="section-title">Тварини</h2>
-
-            <p className="section-subtitle">
-              Оберіть тварину, щоб переглянути доступну карту.
-            </p>
-
-            <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-              {loading ? (
-                <div className="empty-state">Завантаження...</div>
-              ) : animals.length === 0 ? (
-                <div className="empty-state">Тварин поки немає.</div>
-              ) : (
-                animals.map((animal) => (
-                  <div
-                    key={animal.id}
-                    className="card card-hover flex h-full flex-col p-4"
-                  >
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <h3 className="font-semibold text-slate-950">
-                          {animal.name}
-                        </h3>
-
-                        <p className="card-text mt-1">
-                          {animal.species}
-                        </p>
-
-                        {animal.collar_id && (
-                          <p className="mt-2 text-xs text-slate-400">
-                            Collar ID: {animal.collar_id}
-                          </p>
-                        )}
-                      </div>
-
-                      <span className="eco-badge">
-                        30 days
-                      </span>
-                    </div>
-
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      <button
-                        onClick={() => handleViewMap(animal)}
-                        className="btn-primary"
-                      >
-                        Карта
-                      </button>
-
-                      <button
-                        onClick={() => router.push(`/animals/${animal.id}`)}
-                        className="btn-secondary"
-                      >
-                        Профіль
-                      </button>
-                    </div>
-                  </div>
-                ))
-              )}
-            </div>
-
-            {selectedAnimal && (
-              <div className="mt-8">
-                <div className="card-soft mb-4">
-                  <p className="text-xs uppercase tracking-wide text-slate-500">
-                    Карта переміщень
-                  </p>
-
-                  <p className="mt-1 text-lg font-semibold text-slate-950">
-                    {selectedAnimal.name}
-                  </p>
-                </div>
-
-                {gpsData.length === 0 ? (
-                  <div className="empty-state">
-                    Даних для тварини {selectedAnimal.name} поки немає.
-                  </div>
-                ) : (
-                  <div className="map-wrapper">
-                    <AnimalMap points={gpsData} />
-                  </div>
-                )}
-              </div>
+            {animal.collar_id && (
+              <p className="mt-2 text-xs text-slate-400">
+                Collar ID: {animal.collar_id}
+              </p>
             )}
           </div>
-        </section>
-      </main>
-    </PageTransition>
+
+          <span className="eco-badge">30 days</span>
+        </div>
+
+        <div className="mt-4 flex flex-wrap gap-2">
+          <button onClick={() => handleViewMap(animal)} className="btn-primary">
+            Карта
+          </button>
+
+          <button
+            onClick={() => router.push(`/animals/${animal.id}`)}
+            className="btn-secondary"
+          >
+            Профіль
+          </button>
+        </div>
+      </div>
+
+      {shouldShowMapAfterThisAnimal && (
+        <div className="col-span-full mt-4">
+          <div className="card-soft mb-4">
+            <p className="text-xs uppercase tracking-wide text-slate-500">
+              Карта переміщень
+            </p>
+
+            <p className="mt-1 text-lg font-semibold text-slate-950">
+              {selectedAnimal.name}
+            </p>
+          </div>
+
+          {gpsData.length === 0 ? (
+            <div className="empty-state">
+              Даних для тварини {selectedAnimal.name} поки немає.
+            </div>
+          ) : (
+            <div className="map-wrapper">
+              <AnimalMap points={gpsData} />
+            </div>
+          )}
+        </div>
+      )}
+    </>
   );
-}
+})}}
