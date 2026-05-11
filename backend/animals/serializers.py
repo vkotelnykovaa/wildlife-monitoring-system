@@ -1,7 +1,6 @@
 from rest_framework import serializers
 from .models import Animal, GPSData
 from .models import Adoption
-from .models import Order
 
 
 class GPSDataSerializer(serializers.ModelSerializer):
@@ -22,7 +21,3 @@ class AdoptionSerializer(serializers.ModelSerializer):
         model = Adoption
         fields = "__all__"
 
-class OrderSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Order
-        fields = "__all__"

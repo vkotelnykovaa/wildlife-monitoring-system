@@ -3,8 +3,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.permissions import AllowAny, IsAdminUser, IsAuthenticated
 
-from .models import Animal, GPSData, Adoption, Order
-from .serializers import AnimalSerializer, GPSDataSerializer, AdoptionSerializer, OrderSerializer
+from .models import Animal, GPSData, Adoption
+from .serializers import AnimalSerializer, GPSDataSerializer, AdoptionSerializer
 from datetime import timedelta
 from django.utils import timezone
 import math
@@ -82,29 +82,7 @@ class AdoptionCreateView(APIView):
 
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-class OrderCreateView(APIView):
-    permission_classes = [AllowAny]
 
-    def post(self, request):
-        serializer = OrderSerializer(data=request.data)
-
-        if serializer.is_valid():
-            serializer.save(
-                user=request.user if request.user.is_authenticated else None
-            )
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-class UserOrdersView(APIView):
-    permission_classes = [IsAuthenticated]
-
-    def get(self, request):
-        orders = Order.objects.filter(user=request.user).order_by("-created_at")
-
-        serializer = OrderSerializer(orders, many=True)
-
-        return Response(serializer.data)
 
 class AnimalActivityView(APIView):
     permission_classes = [IsAuthenticated]
