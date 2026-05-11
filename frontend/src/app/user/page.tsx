@@ -123,7 +123,7 @@ export default function UserPage() {
               Оберіть тварину, щоб переглянути доступну карту.
             </p>
 
-            <div className="mt-6 space-y-3">
+           <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {loading ? (
                 <div className="empty-state">Завантаження...</div>
               ) : animals.length === 0 ? (
