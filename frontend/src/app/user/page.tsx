@@ -130,7 +130,10 @@ export default function UserPage() {
                 <div className="empty-state">Тварин поки немає.</div>
               ) : (
                 animals.map((animal) => (
-                  <div key={animal.id} className="card card-hover p-4">
+                  <div
+                    key={animal.id}
+                    className="card card-hover flex h-full flex-col p-4"
+                  >
                     <div className="flex items-start justify-between gap-4">
                       <div>
                         <h3 className="font-semibold text-slate-950">
@@ -178,7 +181,7 @@ export default function UserPage() {
                         </div>
 
                         {gpsData.length === 0 ? (
-                          <div className="empty-state">
+                          <div className="empty-state ">
                             Даних для тварини {animal.name} поки немає.
                           </div>
                         ) : (
