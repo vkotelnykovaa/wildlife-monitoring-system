@@ -123,7 +123,7 @@ export default function UserPage() {
               Оберіть тварину, щоб переглянути доступну карту.
             </p>
 
-           <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-6 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
               {loading ? (
                 <div className="empty-state">Завантаження...</div>
               ) : animals.length === 0 ? (
@@ -140,7 +140,9 @@ export default function UserPage() {
                           {animal.name}
                         </h3>
 
-                        <p className="card-text mt-1">{animal.species}</p>
+                        <p className="card-text mt-1">
+                          {animal.species}
+                        </p>
 
                         {animal.collar_id && (
                           <p className="mt-2 text-xs text-slate-400">
@@ -149,7 +151,9 @@ export default function UserPage() {
                         )}
                       </div>
 
-                      <span className="eco-badge">30 days</span>
+                      <span className="eco-badge">
+                        30 days
+                      </span>
                     </div>
 
                     <div className="mt-4 flex flex-wrap gap-2">
@@ -167,34 +171,34 @@ export default function UserPage() {
                         Профіль
                       </button>
                     </div>
-
-                    {selectedAnimal?.id === animal.id && (
-                      <div className="mt-6">
-                        <div className="card-soft mb-4">
-                          <p className="text-xs uppercase tracking-wide text-slate-500">
-                            Карта переміщень
-                          </p>
-
-                          <p className="mt-1 text-lg font-semibold text-slate-950">
-                            {animal.name}
-                          </p>
-                        </div>
-
-                        {gpsData.length === 0 ? (
-                          <div className="empty-state ">
-                            Даних для тварини {animal.name} поки немає.
-                          </div>
-                        ) : (
-                          <div className="map-wrapper w-full">
-                            <AnimalMap points={gpsData} />
-                          </div>
-                        )}
-                      </div>
-                    )}
                   </div>
                 ))
               )}
             </div>
+
+            {selectedAnimal && (
+              <div className="mt-8">
+                <div className="card-soft mb-4">
+                  <p className="text-xs uppercase tracking-wide text-slate-500">
+                    Карта переміщень
+                  </p>
+
+                  <p className="mt-1 text-lg font-semibold text-slate-950">
+                    {selectedAnimal.name}
+                  </p>
+                </div>
+
+                {gpsData.length === 0 ? (
+                  <div className="empty-state">
+                    Даних для тварини {selectedAnimal.name} поки немає.
+                  </div>
+                ) : (
+                  <div className="map-wrapper">
+                    <AnimalMap points={gpsData} />
+                  </div>
+                )}
+              </div>
+            )}
           </div>
         </section>
       </main>
