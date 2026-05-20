@@ -82,8 +82,8 @@ export default function AnimalDetailPage() {
 return (
    <PageTransition>
   <main className="page px-6 py-10">
-    <section className="mx-auto grid max-w-6xl gap-6 lg:grid-cols-[0.9fr_1.4fr]">
-      <div className="card">
+    <section className="mx-auto grid max-w-6xl items-start gap-6 lg:grid-cols-[0.9fr_1.4fr]">
+      <div className="card p-6">
         <div className="hero-gradient flex h-72 items-center justify-center rounded-lg text-7xl">
           🐾
         </div>

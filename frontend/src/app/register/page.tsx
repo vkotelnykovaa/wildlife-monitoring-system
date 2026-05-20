@@ -11,20 +11,50 @@ export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertType, setAlertType] = useState<"error" | "success">("error");
+
+  const showAlert = (
+    message: string,
+    type: "error" | "success" = "error"
+  ) => {
+    setAlertMessage(message);
+    setAlertType(type);
+  };
+
   const handleRegister = async () => {
+    setAlertMessage("");
+
+    if (!email || !password) {
+      showAlert("Будь ласка, заповніть усі поля.");
+      return;
+    }
+
+    if (password.length < 6) {
+      showAlert("Пароль повинен містити щонайменше 6 символів.");
+      return;
+    }
+
     try {
       await api.post("auth/register/", {
         email,
         password,
       });
 
-      alert("Реєстрація успішна. Тепер увійдіть у систему.");
+      showAlert(
+        "Реєстрація успішна. Зараз ви будете перенаправлені на сторінку входу.",
+        "success"
+      );
 
-      router.push("/login");
+      setTimeout(() => {
+        router.push("/login");
+      }, 1200);
     } catch (error) {
       console.error(error);
 
-      alert("Помилка реєстрації. Перевірте введені дані.");
+      showAlert(
+        "Не вдалося зареєструватися. Можливо, користувач уже існує."
+      );
     }
   };
 
@@ -51,6 +81,18 @@ export default function RegisterPage() {
             <h2 className="section-title mb-6">
               Реєстрація
             </h2>
+
+            {alertMessage && (
+              <div
+                className={`mb-5 rounded-xl border px-4 py-3 text-sm font-medium ${
+                  alertType === "error"
+                    ? "border-red-200 bg-red-50 text-red-700"
+                    : "border-emerald-200 bg-emerald-50 text-emerald-700"
+                }`}
+              >
+                {alertMessage}
+              </div>
+            )}
 
             <div className="form-grid">
               <input

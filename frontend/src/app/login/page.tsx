@@ -11,31 +11,50 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertType, setAlertType] = useState<"error" | "success">("error");
+
+  const showAlert = (message: string, type: "error" | "success" = "error") => {
+    setAlertMessage(message);
+    setAlertType(type);
+  };
+
   const handleLogin = async () => {
+    setAlertMessage("");
+
+    if (!email || !password) {
+      showAlert("Заповніть email та пароль.");
+      return;
+    }
+
     try {
       const response = await api.post("auth/login/", {
         email,
         password,
       });
 
-      localStorage.setItem("accessToken", response.data.access);
-      localStorage.setItem("refreshToken", response.data.refresh);
+      localStorage.setItem("access", response.data.access);
+      localStorage.setItem("refresh", response.data.refresh);
       localStorage.setItem("user", JSON.stringify(response.data.user));
 
       window.dispatchEvent(new Event("authChanged"));
 
+      showAlert("Вхід виконано успішно.", "success");
+
       const user = response.data.user;
 
-      if (user.role === "researcher") {
-        router.push("/researcher");
-      } else if (user.role === "admin") {
-        window.location.href = "http://127.0.0.1:8000/admin";
-      } else {
-        router.push("/user");
-      }
+      setTimeout(() => {
+        if (user.role === "researcher") {
+          router.push("/researcher");
+        } else if (user.role === "admin") {
+          window.location.href = "http://127.0.0.1:8000/admin";
+        } else {
+          router.push("/user");
+        }
+      }, 600);
     } catch (error) {
       console.error(error);
-      alert("Помилка входу. Перевірте email та пароль.");
+      showAlert("Не вдалося увійти. Перевірте email та пароль.");
     }
   };
 
@@ -48,9 +67,7 @@ export default function LoginPage() {
               WildlifeTrack
             </p>
 
-            <h1 className="page-title">
-              Вхід до системи
-            </h1>
+            <h1 className="page-title">Вхід до системи</h1>
 
             <p className="section-subtitle mt-4">
               Увійдіть, щоб отримати доступ до функцій системи відповідно до вашої ролі.
@@ -58,9 +75,19 @@ export default function LoginPage() {
           </div>
 
           <div className="card p-8">
-            <h2 className="section-title mb-6">
-              Авторизація
-            </h2>
+            <h2 className="section-title mb-6">Авторизація</h2>
+
+            {alertMessage && (
+              <div
+                className={`mb-5 rounded-xl border px-4 py-3 text-sm font-medium ${
+                  alertType === "error"
+                    ? "border-red-200 bg-red-50 text-red-700"
+                    : "border-emerald-200 bg-emerald-50 text-emerald-700"
+                }`}
+              >
+                {alertMessage}
+              </div>
+            )}
 
             <div className="form-grid">
               <input
@@ -79,10 +106,7 @@ export default function LoginPage() {
                 className="input"
               />
 
-              <button
-                onClick={handleLogin}
-                className="btn-primary w-full"
-              >
+              <button onClick={handleLogin} className="btn-primary w-full">
                 Увійти
               </button>
 

@@ -13,18 +13,14 @@ type User = {
 const ADMIN_PANEL_URL = "http://127.0.0.1:8000/admin";
 
 const getSavedUser = (): User | null => {
-  if (typeof window === "undefined") {
-    return null;
-  }
-
-  const savedUser = window.localStorage.getItem("user");
+  const savedUser = localStorage.getItem("user");
 
   if (!savedUser) return null;
 
   try {
     return JSON.parse(savedUser) as User;
   } catch {
-    window.localStorage.removeItem("user");
+    localStorage.removeItem("user");
     return null;
   }
 };
@@ -33,8 +29,7 @@ export default function Header() {
   const router = useRouter();
   const pathname = usePathname();
 
-  const [user, setUser] = useState<User | null>(() => getSavedUser());
-
+  const [user, setUser] = useState<User | null>(null);
 
   const isShopPage = pathname === "/shop";
   const isCartPage = pathname === "/cart";
@@ -44,17 +39,21 @@ export default function Header() {
   const showOrders = isShopPage || isCartPage;
 
   useEffect(() => {
+  const timeoutId = window.setTimeout(() => {
+    setUser(getSavedUser());
+  }, 0);
 
-    const handleAuthChanged = () => {
-      setUser(getSavedUser());
-    };
+  const handleAuthChanged = () => {
+    setUser(getSavedUser());
+  };
 
-    window.addEventListener("authChanged", handleAuthChanged);
+  window.addEventListener("authChanged", handleAuthChanged);
 
-    return () => {
-      window.removeEventListener("authChanged", handleAuthChanged);
-    };
-  }, []);
+  return () => {
+    window.clearTimeout(timeoutId);
+    window.removeEventListener("authChanged", handleAuthChanged);
+  };
+}, []);
 
   const handleLogout = () => {
     const confirmed = window.confirm(
@@ -63,8 +62,8 @@ export default function Header() {
 
     if (!confirmed) return;
 
-    localStorage.removeItem("accessToken");
-    localStorage.removeItem("refreshToken");
+    localStorage.removeItem("access");
+    localStorage.removeItem("refresh");
     localStorage.removeItem("user");
 
     setUser(null);

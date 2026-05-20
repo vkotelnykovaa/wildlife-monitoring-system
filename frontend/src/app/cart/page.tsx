@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import api from "@/services/api";
 import { useRouter } from "next/navigation";
 import PageTransition from "@/components/PageTransition/PageTransition";
@@ -14,11 +14,7 @@ type Product = {
 };
 
 const getSavedCart = (): Product[] => {
-  if (typeof window === "undefined") {
-    return [];
-  }
-
-  const savedCart = window.localStorage.getItem("cart");
+  const savedCart = localStorage.getItem("cart");
 
   if (!savedCart) return [];
 
@@ -30,19 +26,31 @@ const getSavedCart = (): Product[] => {
       quantity: item.quantity || 1,
     }));
   } catch {
-    window.localStorage.removeItem("cart");
+    localStorage.removeItem("cart");
     return [];
   }
 };
 
 export default function CartPage() {
-  const [cart, setCart] = useState<Product[]>(() => getSavedCart());
+  const router = useRouter();
+
+  const [cart, setCart] = useState<Product[]>([]);
+  const [mounted, setMounted] = useState(false);
 
   const [customerName, setCustomerName] = useState("");
   const [customerEmail, setCustomerEmail] = useState("");
   const [address, setAddress] = useState("");
 
-  const router = useRouter();
+  useEffect(() => {
+    const timeoutId = window.setTimeout(() => {
+      setCart(getSavedCart());
+      setMounted(true);
+    }, 0);
+
+    return () => {
+      window.clearTimeout(timeoutId);
+    };
+  }, []);
 
   const total = cart.reduce(
     (sum, item) => sum + item.price * item.quantity,
@@ -98,7 +106,7 @@ export default function CartPage() {
     }
 
     try {
-      await api.post("orders/create/", {
+      await api.post("shop/orders/create/", {
         customer_name: customerName,
         customer_email: customerEmail,
         address,
@@ -119,6 +127,10 @@ export default function CartPage() {
       alert("Не вдалося оформити замовлення");
     }
   };
+
+  if (!mounted) {
+    return null;
+  }
 
   return (
     <PageTransition>

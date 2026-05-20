@@ -209,4 +209,20 @@ body {
 .gradient-card {
   @apply rounded-lg border border-slate-200 bg-gradient-to-br from-white to-emerald-50/40 p-6 shadow-sm;
 }
+
+.error-box {
+  @apply rounded-2xl border border-red-200 bg-red-50 p-4 text-red-700;
+}
+
+.success-box {
+  @apply rounded-2xl border border-emerald-200 bg-emerald-50 p-4 text-emerald-700;
+}
+
+.warning-box {
+  @apply rounded-2xl border border-amber-200 bg-amber-50 p-4 text-amber-700;
+}
+
+.info-box {
+  @apply rounded-2xl border border-slate-200 bg-slate-50 p-4 text-slate-700;
+}
 }

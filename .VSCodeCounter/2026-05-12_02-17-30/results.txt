@@ -1,0 +1,401 @@
+Date : 2026-05-12 02:17:30
+Directory : c:\projects\diploma
+Total : 265 files,  35915 codes, 4629 comments, 6765 blanks, all 47309 lines
+
+Languages
++--------------------+------------+------------+------------+------------+------------+
+| language           | files      | code       | comment    | blank      | total      |
++--------------------+------------+------------+------------+------------+------------+
+| JavaScript         |        103 |     18,736 |      4,052 |      4,866 |     27,654 |
+| JSON               |          2 |      6,890 |          0 |          2 |      6,892 |
+| PostCSS            |         53 |      6,540 |        319 |      1,183 |      8,042 |
+| TypeScript JSX     |         16 |      1,871 |          0 |        366 |      2,237 |
+| XML                |         38 |        948 |        186 |         33 |      1,167 |
+| Python             |         42 |        740 |         56 |        260 |      1,056 |
+| Markdown           |          4 |        106 |         14 |         42 |        162 |
+| TypeScript         |          4 |         42 |          1 |         11 |         54 |
+| JSON with Comments |          1 |         34 |          0 |          1 |         35 |
+| Shell Script       |          1 |          4 |          1 |          1 |          6 |
+| Dotenv             |          1 |          4 |          0 |          0 |          4 |
++--------------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                                     | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                                        |        265 |     35,915 |      4,629 |      6,765 |     47,309 |
+| backend                                                                                                  |        233 |     26,868 |      4,626 |      6,317 |     37,811 |
+| backend (Files)                                                                                          |          3 |         23 |          4 |          6 |         33 |
+| backend\animals                                                                                          |         14 |        307 |          6 |        113 |        426 |
+| backend\animals (Files)                                                                                  |          8 |        214 |          1 |         81 |        296 |
+| backend\animals\migrations                                                                               |          6 |         93 |          5 |         32 |        130 |
+| backend\backend                                                                                          |          5 |        134 |         41 |         53 |        228 |
+| backend\shop                                                                                             |         11 |        125 |          3 |         43 |        171 |
+| backend\shop (Files)                                                                                     |          8 |         84 |          1 |         29 |        114 |
+| backend\shop\migrations                                                                                  |          3 |         41 |          2 |         14 |         57 |
+| backend\staticfiles                                                                                      |        189 |     26,120 |      4,569 |      6,056 |     36,745 |
+| backend\staticfiles\admin                                                                                |        128 |     22,247 |      4,229 |      5,679 |     32,155 |
+| backend\staticfiles\admin\css                                                                            |         16 |      4,115 |        114 |        968 |      5,197 |
+| backend\staticfiles\admin\css (Files)                                                                    |         13 |      3,672 |        114 |        905 |      4,691 |
+| backend\staticfiles\admin\css\vendor                                                                     |          3 |        443 |          0 |         63 |        506 |
+| backend\staticfiles\admin\css\vendor\select2                                                             |          3 |        443 |          0 |         63 |        506 |
+| backend\staticfiles\admin\img                                                                            |         27 |        208 |        200 |         44 |        452 |
+| backend\staticfiles\admin\js                                                                             |         85 |     17,924 |      3,915 |      4,667 |     26,506 |
+| backend\staticfiles\admin\js (Files)                                                                     |         17 |      1,618 |        188 |        146 |      1,952 |
+| backend\staticfiles\admin\js\admin                                                                       |          2 |        538 |         79 |         50 |        667 |
+| backend\staticfiles\admin\js\vendor                                                                      |         66 |     15,768 |      3,648 |      4,471 |     23,887 |
+| backend\staticfiles\admin\js\vendor\jquery                                                               |          2 |      6,768 |      1,888 |      2,064 |     10,720 |
+| backend\staticfiles\admin\js\vendor\select2                                                              |         62 |      5,179 |        444 |      1,399 |      7,022 |
+| backend\staticfiles\admin\js\vendor\select2 (Files)                                                      |          3 |      5,120 |        385 |      1,340 |      6,845 |
+| backend\staticfiles\admin\js\vendor\select2\i18n                                                         |         59 |         59 |         59 |         59 |        177 |
+| backend\staticfiles\admin\js\vendor\xregexp                                                              |          2 |      3,821 |      1,316 |      1,008 |      6,145 |
+| backend\staticfiles\jazzmin                                                                              |         12 |      1,083 |        136 |        243 |      1,462 |
+| backend\staticfiles\jazzmin\css                                                                          |          1 |        391 |         57 |         84 |        532 |
+| backend\staticfiles\jazzmin\img                                                                          |          5 |         82 |          0 |          5 |         87 |
+| backend\staticfiles\jazzmin\js                                                                           |          5 |        609 |         79 |        153 |        841 |
+| backend\staticfiles\jazzmin\plugins                                                                      |          1 |          1 |          0 |          1 |          2 |
+| backend\staticfiles\jazzmin\plugins\bootstrap-show-modal                                                 |          1 |          1 |          0 |          1 |          2 |
+| backend\staticfiles\rest_framework                                                                       |         15 |      2,494 |         75 |        115 |      2,684 |
+| backend\staticfiles\rest_framework\css                                                                   |          6 |      1,597 |         38 |         67 |      1,702 |
+| backend\staticfiles\rest_framework\fonts                                                                 |          2 |        702 |          0 |          2 |        704 |
+| backend\staticfiles\rest_framework\js                                                                    |          7 |        195 |         37 |         46 |        278 |
+| backend\staticfiles\vendor                                                                               |         34 |        296 |        129 |         19 |        444 |
+| backend\staticfiles\vendor\adminlte                                                                      |          2 |          7 |          7 |          0 |         14 |
+| backend\staticfiles\vendor\adminlte\css                                                                  |          1 |          6 |          1 |          0 |          7 |
+| backend\staticfiles\vendor\adminlte\js                                                                   |          1 |          1 |          6 |          0 |          7 |
+| backend\staticfiles\vendor\bootstrap                                                                     |          2 |          2 |         12 |          0 |         14 |
+| backend\staticfiles\vendor\bootstrap\js                                                                  |          2 |          2 |         12 |          0 |         14 |
+| backend\staticfiles\vendor\bootswatch                                                                    |         27 |        282 |        104 |         16 |        402 |
+| backend\staticfiles\vendor\bootswatch\brite                                                              |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\cerulean                                                           |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\cosmo                                                              |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\cyborg                                                             |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\darkly                                                             |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\default                                                            |          1 |         74 |          0 |         16 |         90 |
+| backend\staticfiles\vendor\bootswatch\flatly                                                             |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\journal                                                            |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\litera                                                             |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\lumen                                                              |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\lux                                                                |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\materia                                                            |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\minty                                                              |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\morph                                                              |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\pulse                                                              |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\quartz                                                             |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\sandstone                                                          |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\simplex                                                            |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\sketchy                                                            |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\slate                                                              |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\solar                                                              |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\spacelab                                                           |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\superhero                                                          |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\united                                                             |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\vapor                                                              |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\yeti                                                               |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\bootswatch\zephyr                                                             |          1 |          8 |          4 |          0 |         12 |
+| backend\staticfiles\vendor\fontawesome-free                                                              |          1 |          3 |          5 |          2 |         10 |
+| backend\staticfiles\vendor\fontawesome-free\css                                                          |          1 |          3 |          5 |          2 |         10 |
+| backend\staticfiles\vendor\select2                                                                       |          2 |          2 |          1 |          1 |          4 |
+| backend\staticfiles\vendor\select2\css                                                                   |          1 |          1 |          0 |          1 |          2 |
+| backend\staticfiles\vendor\select2\js                                                                    |          1 |          1 |          1 |          0 |          2 |
+| backend\users                                                                                            |         11 |        159 |          3 |         46 |        208 |
+| backend\users (Files)                                                                                    |          8 |        104 |          1 |         32 |        137 |
+| backend\users\migrations                                                                                 |          3 |         55 |          2 |         14 |         71 |
+| frontend                                                                                                 |         32 |      9,047 |          3 |        448 |      9,498 |
+| frontend (Files)                                                                                         |          7 |      6,972 |          3 |         24 |      6,999 |
+| frontend\public                                                                                          |          5 |          5 |          0 |          0 |          5 |
+| frontend\src                                                                                             |         20 |      2,070 |          0 |        424 |      2,494 |
+| frontend\src\app                                                                                         |         13 |      1,827 |          0 |        370 |      2,197 |
+| frontend\src\app (Files)                                                                                 |          3 |        356 |          0 |         83 |        439 |
+| frontend\src\app\adoption-success                                                                        |          1 |         38 |          0 |         10 |         48 |
+| frontend\src\app\animals                                                                                 |          1 |        200 |          0 |         32 |        232 |
+| frontend\src\app\animals\[id]                                                                            |          1 |        200 |          0 |         32 |        232 |
+| frontend\src\app\cart                                                                                    |          1 |        198 |          0 |         43 |        241 |
+| frontend\src\app\login                                                                                   |          1 |         85 |          0 |         16 |        101 |
+| frontend\src\app\order-success                                                                           |          1 |         38 |          0 |          8 |         46 |
+| frontend\src\app\orders                                                                                  |          1 |         97 |          0 |         14 |        111 |
+| frontend\src\app\register                                                                                |          1 |         76 |          0 |         15 |         91 |
+| frontend\src\app\researcher                                                                              |          1 |        443 |          0 |         90 |        533 |
+| frontend\src\app\shop                                                                                    |          1 |        109 |          0 |         22 |        131 |
+| frontend\src\app\user                                                                                    |          1 |        187 |          0 |         37 |        224 |
+| frontend\src\components                                                                                  |          4 |        206 |          0 |         46 |        252 |
+| frontend\src\components (Files)                                                                          |          1 |         46 |          0 |          8 |         54 |
+| frontend\src\components\Header                                                                           |          1 |        129 |          0 |         33 |        162 |
+| frontend\src\components\PageTransition                                                                   |          1 |         17 |          0 |          3 |         20 |
+| frontend\src\components\ui                                                                               |          1 |         14 |          0 |          2 |         16 |
+| frontend\src\services                                                                                    |          1 |         12 |          0 |          5 |         17 |
+| frontend\src\types                                                                                       |          1 |         19 |          0 |          2 |         21 |
+| frontend\src\utils                                                                                       |          1 |          6 |          0 |          1 |          7 |
++----------------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| filename                                                                                                 | language           | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
+| c:\projects\diploma\backend\.env                                                                         | Dotenv             |          4 |          0 |          0 |          4 |
+| c:\projects\diploma\backend\animals\__init__.py                                                          | Python             |          0 |          0 |          1 |          1 |
+| c:\projects\diploma\backend\animals\admin.py                                                             | Python             |          6 |          0 |          3 |          9 |
+| c:\projects\diploma\backend\animals\apps.py                                                              | Python             |          3 |          0 |          3 |          6 |
+| c:\projects\diploma\backend\animals\migrations\0001_initial.py                                           | Python             |         29 |          1 |          7 |         37 |
+| c:\projects\diploma\backend\animals\migrations\0002_adoption.py                                          | Python             |         20 |          1 |          6 |         27 |
+| c:\projects\diploma\backend\animals\migrations\0003_order.py                                             | Python             |         19 |          1 |          6 |         26 |
+| c:\projects\diploma\backend\animals\migrations\0004_order_user.py                                        | Python             |         15 |          1 |          6 |         22 |
+| c:\projects\diploma\backend\animals\migrations\0005_delete_order.py                                      | Python             |         10 |          1 |          6 |         17 |
+| c:\projects\diploma\backend\animals\migrations\__init__.py                                               | Python             |          0 |          0 |          1 |          1 |
+| c:\projects\diploma\backend\animals\models.py                                                            | Python             |         33 |          0 |         13 |         46 |
+| c:\projects\diploma\backend\animals\serializers.py                                                       | Python             |         16 |          0 |          8 |         24 |
+| c:\projects\diploma\backend\animals\tests.py                                                             | Python             |          1 |          1 |          2 |          4 |
+| c:\projects\diploma\backend\animals\urls.py                                                              | Python             |         11 |          0 |          2 |         13 |
+| c:\projects\diploma\backend\animals\views.py                                                             | Python             |        144 |          0 |         49 |        193 |
+| c:\projects\diploma\backend\backend\__init__.py                                                          | Python             |          0 |          0 |          1 |          1 |
+| c:\projects\diploma\backend\backend\asgi.py                                                              | Python             |          4 |          8 |          5 |         17 |
+| c:\projects\diploma\backend\backend\settings.py                                                          | Python             |        110 |         25 |         40 |        175 |
+| c:\projects\diploma\backend\backend\urls.py                                                              | Python             |         16 |          0 |          2 |         18 |
+| c:\projects\diploma\backend\backend\wsgi.py                                                              | Python             |          4 |          8 |          5 |         17 |
+| c:\projects\diploma\backend\build.sh                                                                     | Shell Script       |          4 |          1 |          1 |          6 |
+| c:\projects\diploma\backend\manage.py                                                                    | Python             |         15 |          3 |          5 |         23 |
+| c:\projects\diploma\backend\shop\__init__.py                                                             | Python             |          0 |          0 |          1 |          1 |
+| c:\projects\diploma\backend\shop\admin.py                                                                | Python             |         10 |          0 |          2 |         12 |
+| c:\projects\diploma\backend\shop\apps.py                                                                 | Python             |          3 |          0 |          3 |          6 |
+| c:\projects\diploma\backend\shop\migrations\0001_initial.py                                              | Python             |         18 |          1 |          7 |         26 |
+| c:\projects\diploma\backend\shop\migrations\0002_order.py                                                | Python             |         23 |          1 |          6 |         30 |
+| c:\projects\diploma\backend\shop\migrations\__init__.py                                                  | Python             |          0 |          0 |          1 |          1 |
+| c:\projects\diploma\backend\shop\models.py                                                               | Python             |         26 |          0 |          6 |         32 |
+| c:\projects\diploma\backend\shop\serializers.py                                                          | Python             |         11 |          0 |          4 |         15 |
+| c:\projects\diploma\backend\shop\tests.py                                                                | Python             |          1 |          1 |          2 |          4 |
+| c:\projects\diploma\backend\shop\urls.py                                                                 | Python             |          7 |          0 |          1 |          8 |
+| c:\projects\diploma\backend\shop\views.py                                                                | Python             |         26 |          0 |         10 |         36 |
+| c:\projects\diploma\backend\staticfiles\admin\css\autocomplete.css                                       | PostCSS            |        230 |          0 |         50 |        280 |
+| c:\projects\diploma\backend\staticfiles\admin\css\base.css                                               | PostCSS            |        968 |         32 |        222 |      1,222 |
+| c:\projects\diploma\backend\staticfiles\admin\css\changelists.css                                        | PostCSS            |        296 |          8 |         68 |        372 |
+| c:\projects\diploma\backend\staticfiles\admin\css\dark_mode.css                                          | PostCSS            |        110 |          6 |         31 |        147 |
+| c:\projects\diploma\backend\staticfiles\admin\css\dashboard.css                                          | PostCSS            |         21 |          2 |          7 |         30 |
+| c:\projects\diploma\backend\staticfiles\admin\css\forms.css                                              | PostCSS            |        404 |         12 |        105 |        521 |
+| c:\projects\diploma\backend\staticfiles\admin\css\login.css                                              | PostCSS            |         49 |          1 |         12 |         62 |
+| c:\projects\diploma\backend\staticfiles\admin\css\nav_sidebar.css                                        | PostCSS            |        125 |          0 |         26 |        151 |
+| c:\projects\diploma\backend\staticfiles\admin\css\responsive.css                                         | PostCSS            |        659 |         31 |        196 |        886 |
+| c:\projects\diploma\backend\staticfiles\admin\css\responsive_rtl.css                                     | PostCSS            |         74 |          2 |         20 |         96 |
+| c:\projects\diploma\backend\staticfiles\admin\css\rtl.css                                                | PostCSS            |        226 |          8 |         63 |        297 |
+| c:\projects\diploma\backend\staticfiles\admin\css\unusable_password_field.css                            | PostCSS            |         13 |          3 |          4 |         20 |
+| c:\projects\diploma\backend\staticfiles\admin\css\vendor\select2\LICENSE-SELECT2.md                      | Markdown           |         17 |          0 |          5 |         22 |
+| c:\projects\diploma\backend\staticfiles\admin\css\vendor\select2\select2.css                             | PostCSS            |        425 |          0 |         57 |        482 |
+| c:\projects\diploma\backend\staticfiles\admin\css\vendor\select2\select2.min.css                         | PostCSS            |          1 |          0 |          1 |          2 |
+| c:\projects\diploma\backend\staticfiles\admin\css\widgets.css                                            | PostCSS            |        497 |          9 |        101 |        607 |
+| c:\projects\diploma\backend\staticfiles\admin\img\README.md                                              | Markdown           |         49 |         14 |         18 |         81 |
+| c:\projects\diploma\backend\staticfiles\admin\img\calendar-icons.svg                                     | XML                |         33 |         11 |          1 |         45 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-addlink.svg                                       | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-alert-dark.svg                                    | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-alert.svg                                         | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-calendar.svg                                      | XML                |          9 |          6 |          1 |         16 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-changelink.svg                                    | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-clock.svg                                         | XML                |          9 |          6 |          1 |         16 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-debug-dark.svg                                    | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-debug.svg                                         | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-deletelink.svg                                    | XML                |          5 |          6 |          1 |         12 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-hidelink.svg                                      | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-info-dark.svg                                     | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-info.svg                                          | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-no-dark.svg                                       | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-no.svg                                            | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-unknown-alt.svg                                   | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-unknown.svg                                       | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-viewlink.svg                                      | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-yes-dark.svg                                      | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\icon-yes.svg                                           | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\inline-delete.svg                                      | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\search.svg                                             | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\selector-icons.svg                                     | XML                |         24 |         21 |          1 |         46 |
+| c:\projects\diploma\backend\staticfiles\admin\img\sorting-icons.svg                                      | XML                |         19 |         16 |          1 |         36 |
+| c:\projects\diploma\backend\staticfiles\admin\img\tooltag-add.svg                                        | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\img\tooltag-arrowright.svg                                 | XML                |          3 |          6 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\admin\js\SelectBox.js                                            | JavaScript         |        111 |          5 |          1 |        117 |
+| c:\projects\diploma\backend\staticfiles\admin\js\SelectFilter2.js                                        | JavaScript         |        280 |         28 |         22 |        330 |
+| c:\projects\diploma\backend\staticfiles\admin\js\actions.js                                              | JavaScript         |        175 |          9 |         21 |        205 |
+| c:\projects\diploma\backend\staticfiles\admin\js\admin\DateTimeShortcuts.js                              | JavaScript         |        322 |         65 |         27 |        414 |
+| c:\projects\diploma\backend\staticfiles\admin\js\admin\RelatedObjectLookups.js                           | JavaScript         |        216 |         14 |         23 |        253 |
+| c:\projects\diploma\backend\staticfiles\admin\js\autocomplete.js                                         | JavaScript         |         28 |          2 |          4 |         34 |
+| c:\projects\diploma\backend\staticfiles\admin\js\calendar.js                                             | JavaScript         |        196 |         28 |         16 |        240 |
+| c:\projects\diploma\backend\staticfiles\admin\js\cancel.js                                               | JavaScript         |         15 |          1 |          2 |         18 |
+| c:\projects\diploma\backend\staticfiles\admin\js\change_form.js                                          | JavaScript         |         14 |          2 |          1 |         17 |
+| c:\projects\diploma\backend\staticfiles\admin\js\core.js                                                 | JavaScript         |        148 |         19 |         18 |        185 |
+| c:\projects\diploma\backend\staticfiles\admin\js\filters.js                                              | JavaScript         |         20 |          6 |          5 |         31 |
+| c:\projects\diploma\backend\staticfiles\admin\js\inlines.js                                              | JavaScript         |        272 |         61 |         27 |        360 |
+| c:\projects\diploma\backend\staticfiles\admin\js\jquery.init.js                                          | JavaScript         |          2 |          6 |          1 |          9 |
+| c:\projects\diploma\backend\staticfiles\admin\js\nav_sidebar.js                                          | JavaScript         |         73 |          1 |          6 |         80 |
+| c:\projects\diploma\backend\staticfiles\admin\js\popup_response.js                                       | JavaScript         |         38 |          2 |          4 |         44 |
+| c:\projects\diploma\backend\staticfiles\admin\js\prepopulate.js                                          | JavaScript         |         29 |         10 |          5 |         44 |
+| c:\projects\diploma\backend\staticfiles\admin\js\prepopulate_init.js                                     | JavaScript         |         15 |          0 |          1 |         16 |
+| c:\projects\diploma\backend\staticfiles\admin\js\theme.js                                                | JavaScript         |         43 |          3 |          6 |         52 |
+| c:\projects\diploma\backend\staticfiles\admin\js\urlify.js                                               | JavaScript         |        159 |          5 |          6 |        170 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\jquery\jquery.js                                 | JavaScript         |      6,767 |      1,887 |      2,063 |     10,717 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\jquery\jquery.min.js                             | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\LICENSE.md                               | Markdown           |         17 |          0 |          5 |         22 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\af.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ar.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\az.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\bg.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\bn.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\bs.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ca.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\cs.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\da.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\de.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\dsb.js                              | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\el.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\en.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\es.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\et.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\eu.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\fa.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\fi.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\fr.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\gl.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\he.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\hi.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\hr.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\hsb.js                              | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\hu.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\hy.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\id.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\is.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\it.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ja.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ka.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\km.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ko.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\lt.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\lv.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\mk.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ms.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\nb.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ne.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\nl.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\pl.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ps.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\pt-BR.js                            | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\pt.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ro.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\ru.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\sk.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\sl.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\sq.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\sr-Cyrl.js                          | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\sr.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\sv.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\th.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\tk.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\tr.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\uk.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\vi.js                               | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\zh-CN.js                            | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\i18n\zh-TW.js                            | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\select2.full.js                          | JavaScript         |      5,102 |        384 |      1,335 |      6,821 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\select2\select2.full.min.js                      | JavaScript         |          1 |          1 |          0 |          2 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\xregexp\xregexp.js                               | JavaScript         |      3,817 |      1,303 |      1,007 |      6,127 |
+| c:\projects\diploma\backend\staticfiles\admin\js\vendor\xregexp\xregexp.min.js                           | JavaScript         |          4 |         13 |          1 |         18 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\css\main.css                                             | PostCSS            |        391 |         57 |         84 |        532 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\img\calendar-icons.svg                                   | XML                |         14 |          0 |          1 |         15 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\img\default-log.svg                                      | XML                |         22 |          0 |          1 |         23 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\img\icon-calendar.svg                                    | XML                |          9 |          0 |          1 |         10 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\img\icon-changelink.svg                                  | XML                |          3 |          0 |          1 |          4 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\img\selector-icons.svg                                   | XML                |         34 |          0 |          1 |         35 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\js\change_form.js                                        | JavaScript         |        104 |         18 |         30 |        152 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\js\change_list.js                                        | JavaScript         |         49 |          6 |          9 |         64 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\js\main.js                                               | JavaScript         |         87 |         15 |         24 |        126 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\js\related-modal.js                                      | JavaScript         |        127 |         27 |         39 |        193 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\js\ui-builder.js                                         | JavaScript         |        242 |         13 |         51 |        306 |
+| c:\projects\diploma\backend\staticfiles\jazzmin\plugins\bootstrap-show-modal\bootstrap-show-modal.min.js | JavaScript         |          1 |          0 |          1 |          2 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\css\bootstrap-theme.min.css                       | PostCSS            |          1 |          5 |          0 |          6 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\css\bootstrap-tweaks.css                          | PostCSS            |        177 |         15 |         46 |        238 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\css\bootstrap.min.css                             | PostCSS            |          1 |          5 |          0 |          6 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\css\default.css                                   | PostCSS            |         62 |          3 |         18 |         83 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\css\font-awesome-4.0.3.css                        | PostCSS            |      1,329 |          9 |          1 |      1,339 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\css\prettify.css                                  | PostCSS            |         27 |          1 |          2 |         30 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\fonts\fontawesome-webfont.svg                     | XML                |        414 |          0 |          1 |        415 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\fonts\glyphicons-halflings-regular.svg            | XML                |        288 |          0 |          1 |        289 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\js\ajax-form.js                                   | JavaScript         |         95 |         16 |         23 |        134 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\js\bootstrap.min.js                               | JavaScript         |          1 |          5 |          0 |          6 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\js\csrf.js                                        | JavaScript         |         35 |          9 |         10 |         54 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\js\default.js                                     | JavaScript         |         32 |          6 |         10 |         48 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\js\jquery-3.7.1.min.js                            | JavaScript         |          1 |          1 |          1 |          3 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\js\load-ajax-form.js                              | JavaScript         |          3 |          0 |          1 |          4 |
+| c:\projects\diploma\backend\staticfiles\rest_framework\js\prettify-min.js                                | JavaScript         |         28 |          0 |          1 |         29 |
+| c:\projects\diploma\backend\staticfiles\vendor\adminlte\css\adminlte.min.css                             | PostCSS            |          6 |          1 |          0 |          7 |
+| c:\projects\diploma\backend\staticfiles\vendor\adminlte\js\adminlte.min.js                               | JavaScript         |          1 |          6 |          0 |          7 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootstrap\js\bootstrap.bundle.min.js                      | JavaScript         |          1 |          6 |          0 |          7 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootstrap\js\bootstrap.min.js                             | JavaScript         |          1 |          6 |          0 |          7 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\brite\bootstrap.min.css                        | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\cerulean\bootstrap.min.css                     | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\cosmo\bootstrap.min.css                        | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\cyborg\bootstrap.min.css                       | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\darkly\bootstrap.min.css                       | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\default\bootstrap.min.css                      | PostCSS            |         74 |          0 |         16 |         90 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\flatly\bootstrap.min.css                       | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\journal\bootstrap.min.css                      | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\litera\bootstrap.min.css                       | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\lumen\bootstrap.min.css                        | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\lux\bootstrap.min.css                          | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\materia\bootstrap.min.css                      | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\minty\bootstrap.min.css                        | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\morph\bootstrap.min.css                        | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\pulse\bootstrap.min.css                        | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\quartz\bootstrap.min.css                       | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\sandstone\bootstrap.min.css                    | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\simplex\bootstrap.min.css                      | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\sketchy\bootstrap.min.css                      | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\slate\bootstrap.min.css                        | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\solar\bootstrap.min.css                        | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\spacelab\bootstrap.min.css                     | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\superhero\bootstrap.min.css                    | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\united\bootstrap.min.css                       | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\vapor\bootstrap.min.css                        | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\yeti\bootstrap.min.css                         | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\bootswatch\zephyr\bootstrap.min.css                       | PostCSS            |          8 |          4 |          0 |         12 |
+| c:\projects\diploma\backend\staticfiles\vendor\fontawesome-free\css\all.min.css                          | PostCSS            |          3 |          5 |          2 |         10 |
+| c:\projects\diploma\backend\staticfiles\vendor\select2\css\select2.min.css                               | PostCSS            |          1 |          0 |          1 |          2 |
+| c:\projects\diploma\backend\staticfiles\vendor\select2\js\select2.min.js                                 | JavaScript         |          1 |          1 |          0 |          2 |
+| c:\projects\diploma\backend\users\__init__.py                                                            | Python             |          0 |          0 |          1 |          1 |
+| c:\projects\diploma\backend\users\admin.py                                                               | Python             |          9 |          0 |          2 |         11 |
+| c:\projects\diploma\backend\users\apps.py                                                                | Python             |          3 |          0 |          3 |          6 |
+| c:\projects\diploma\backend\users\migrations\0001_initial.py                                             | Python             |         38 |          1 |          7 |         46 |
+| c:\projects\diploma\backend\users\migrations\0002_alter_user_email_alter_user_role.py                    | Python             |         17 |          1 |          6 |         24 |
+| c:\projects\diploma\backend\users\migrations\__init__.py                                                 | Python             |          0 |          0 |          1 |          1 |
+| c:\projects\diploma\backend\users\models.py                                                              | Python             |         13 |          0 |          3 |         16 |
+| c:\projects\diploma\backend\users\serializers.py                                                         | Python             |         48 |          0 |         13 |         61 |
+| c:\projects\diploma\backend\users\tests.py                                                               | Python             |          1 |          1 |          2 |          4 |
+| c:\projects\diploma\backend\users\urls.py                                                                | Python             |          5 |          0 |          1 |          6 |
+| c:\projects\diploma\backend\users\views.py                                                               | Python             |         25 |          0 |          7 |         32 |
+| c:\projects\diploma\frontend\README.md                                                                   | Markdown           |         23 |          0 |         14 |         37 |
+| c:\projects\diploma\frontend\eslint.config.mjs                                                           | JavaScript         |         14 |          2 |          3 |         19 |
+| c:\projects\diploma\frontend\next.config.ts                                                              | TypeScript         |          5 |          1 |          3 |          9 |
+| c:\projects\diploma\frontend\package-lock.json                                                           | JSON               |      6,856 |          0 |          1 |      6,857 |
+| c:\projects\diploma\frontend\package.json                                                                | JSON               |         34 |          0 |          1 |         35 |
+| c:\projects\diploma\frontend\postcss.config.mjs                                                          | JavaScript         |          6 |          0 |          1 |          7 |
+| c:\projects\diploma\frontend\public\file.svg                                                             | XML                |          1 |          0 |          0 |          1 |
+| c:\projects\diploma\frontend\public\globe.svg                                                            | XML                |          1 |          0 |          0 |          1 |
+| c:\projects\diploma\frontend\public\next.svg                                                             | XML                |          1 |          0 |          0 |          1 |
+| c:\projects\diploma\frontend\public\vercel.svg                                                           | XML                |          1 |          0 |          0 |          1 |
+| c:\projects\diploma\frontend\public\window.svg                                                           | XML                |          1 |          0 |          0 |          1 |
+| c:\projects\diploma\frontend\src\app\adoption-success\page.tsx                                           | TypeScript JSX     |         38 |          0 |         10 |         48 |
+| c:\projects\diploma\frontend\src\app\animals\[id]\page.tsx                                               | TypeScript JSX     |        200 |          0 |         32 |        232 |
+| c:\projects\diploma\frontend\src\app\cart\page.tsx                                                       | TypeScript JSX     |        198 |          0 |         43 |        241 |
+| c:\projects\diploma\frontend\src\app\globals.css                                                         | PostCSS            |        162 |          0 |         50 |        212 |
+| c:\projects\diploma\frontend\src\app\layout.tsx                                                          | TypeScript JSX     |         34 |          0 |          5 |         39 |
+| c:\projects\diploma\frontend\src\app\login\page.tsx                                                      | TypeScript JSX     |         85 |          0 |         16 |        101 |
+| c:\projects\diploma\frontend\src\app\order-success\page.tsx                                              | TypeScript JSX     |         38 |          0 |          8 |         46 |
+| c:\projects\diploma\frontend\src\app\orders\page.tsx                                                     | TypeScript JSX     |         97 |          0 |         14 |        111 |
+| c:\projects\diploma\frontend\src\app\page.tsx                                                            | TypeScript JSX     |        160 |          0 |         28 |        188 |
+| c:\projects\diploma\frontend\src\app\register\page.tsx                                                   | TypeScript JSX     |         76 |          0 |         15 |         91 |
+| c:\projects\diploma\frontend\src\app\researcher\page.tsx                                                 | TypeScript JSX     |        443 |          0 |         90 |        533 |
+| c:\projects\diploma\frontend\src\app\shop\page.tsx                                                       | TypeScript JSX     |        109 |          0 |         22 |        131 |
+| c:\projects\diploma\frontend\src\app\user\page.tsx                                                       | TypeScript JSX     |        187 |          0 |         37 |        224 |
+| c:\projects\diploma\frontend\src\components\AnimalMap.tsx                                                | TypeScript JSX     |         46 |          0 |          8 |         54 |
+| c:\projects\diploma\frontend\src\components\Header\Header.tsx                                            | TypeScript JSX     |        129 |          0 |         33 |        162 |
+| c:\projects\diploma\frontend\src\components\PageTransition\PageTransition.tsx                            | TypeScript JSX     |         17 |          0 |          3 |         20 |
+| c:\projects\diploma\frontend\src\components\ui\Card.tsx                                                  | TypeScript JSX     |         14 |          0 |          2 |         16 |
+| c:\projects\diploma\frontend\src\services\api.ts                                                         | TypeScript         |         12 |          0 |          5 |         17 |
+| c:\projects\diploma\frontend\src\types\animal.ts                                                         | TypeScript         |         19 |          0 |          2 |         21 |
+| c:\projects\diploma\frontend\src\utils\auth.ts                                                           | TypeScript         |          6 |          0 |          1 |          7 |
+| c:\projects\diploma\frontend\tsconfig.json                                                               | JSON with Comments |         34 |          0 |          1 |         35 |
+| Total                                                                                                    |                    |     35,915 |      4,629 |      6,765 |     47,309 |
++----------------------------------------------------------------------------------------------------------+--------------------+------------+------------+------------+------------+
